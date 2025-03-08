@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Autimate | Child</title>
+    <!-- headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- text -->
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Lora:ital,wght@0,400..700;1,400..700&family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("images/Child.png");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid lightcyan;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 75%;
+  padding: 5px;
+  text-align: center;
+}
+    #h1{
+        font-family: "Balsamiq Sans", sans-serif;
+        text-align: center;
+        font-size:50px;
+    }
+    footer{
+        background-color:#95dcb2;
+        padding: 20px;
+        color: black;
+    }
+    main,footer{
+        font-family: "Lora", serif;
+    }
+    footer{
+        text-align: center;
+    }
+    h2{
+        font-size: 50px;
+    }
+    .hv{
+        padding:10px;
+        border-radius: 5px;
+        text-decoration: none;
+        
+    }
+    .hv:hover{
+        background-color: aliceblue;
+        border-color: black;
+        background-color: aquamarine;
+    }
+    .active {
+    font-weight: bold;
+    border: 1px solid #086375;
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px #086375;
+    background-color: #A7FFF6;
+  }
+  .nav-link:hover {
+    border: 2px solid #086375;
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px #086375;
+  }
+  #title{
+  color: #086375;
+  font-family: "Balsamiq Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 50px;
+  margin-left: 150px;
+  font-style: normal;
+  }
+  #nav{
+    color: #A4F9C8;
+  }
+  #nav1, #nav2,#nav3,#nav4,#nav5{
+    color: #086375;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    border-bottom: 3px solid #086375;
+    border-radius: 30px;
+  }
+  #navbar{
+    color: #A4F9C8;
+  }
+  #auti{
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    color: #086375;
+    font-size: 145px;
+    margin-top: 160px;
+    margin-left: 160px;
+  }
+  #tagline{
+    color: #1da9c5;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 60px;
+  font-style: normal;
+  margin-left: 150px;
+  }
+  #autimg{
+    margin-left: 80px;
+    margin-top: 70px;
+  }
+    
+    main{
+        background-color:#ace3c3a9 ;
+    }
+    section{
+        align-content: center;
+        padding:20px;
+        /* border:10px;
+        border-radius:5px; */
+        color: red;
+        text-align:center;
+        
+    }
+    section img{
+        border-radius: 10%;
+        padding: 20px;
+    }
+   
+</style>
+<body>  
+  <nav class="navbar navbar-expand-md shadow fixed-top bg-light" id="nav">
+    <div class="container-fluid">
+      <div class="container">
+        <a href="./index.html" class="navbar-brand" id="title"><img src="./images/serenity_logo_new.png" alt=""
+            width="80px" height="80px">&nbsp;AutiMate</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="container navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-1">
+            <a href="index.html#dash" class="nav-link" id="nav1"><i class="fa-solid fa-book"></i>&nbsp;Resources</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a href="./Schedule.html" class="nav-link" id="nav2"><i
+                class="fa-regular fa-calendar-days"></i>&nbsp;Schedule</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a href="./child.html#games1" class="nav-link" id="nav3"><i class="fa-solid fa-gamepad"></i>&nbsp;Games</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a href="./community page.html" class="nav-link" id="nav4"><i
+                class="fa-solid fa-users-line"></i>&nbsp;Community</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a href="index.html#contact" class="nav-link" id="nav4"><i class="fa-solid fa-phone"></i>&nbsp;Contact
+              us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--navbar ends-->
+    <main>
+        <section class="pdfs">
+            <h2 id="st">Story Time</h2>
+            <a href="story/Cinderella.pdf" target="_blank">
+                <img src="story/cind.png" alt="Cinderella" width="300px" height="400">
+            </a>
+            <a href="story/BeautyBeast.pdf" target="_blank">
+                <img src="story/BeautyBeast.png" alt="BeautyBeast" width="300px" height="400">
+            </a>
+            <a href="story/The Wonky Donkey By Craig Smith.pdf" target="_blank">
+                <img src="story/wonkey.png" alt="The Wonky Donkey By Craig Smith" width="300px" height="400">
+            </a><br><br><br>
+            <a href="story/Pinocchio.pdf" target="_blank">
+                <img src="story/Pinocchio.png" alt="Pinocchio" width="300px" height="400">
+            </a>
+            <a href="story/ABoyCalledBat.pdf" target="_blank">
+                <img src="story/boy.png" alt="ABoyCalledBat" width="300px" height="400">
+            </a>
+            <a href="story/Ugly-duckling.pdf" target="_blank">
+                <img src="story/ugly.png" alt="Ugly-duckling" width="300px" height="400">
+            </a>
+        </section> 
+        <br><br><hr style="height:5px;width:1080px;color:rgb(104, 90, 90);background-color:grey">
+        <section class="games" id="games1">
+            <h2 >Games</h2>
+            <a href="https://www.happytracing.com/detail/Fantastic_writing_numbers_game.html" target="_blank">
+                <img src="games/Rainbow.png" alt="Rainbow Bus Game" width="295px" height="286px"></a>
+            <a href="https://toytheater.com/maze/" target="_blank"><img src="games/maze.png" alt="Maze Game" width="295px" height="286px"></a>
+            <a href="https://poki.com/en/g/water-color-sort" target="_blank">
+                <img src="games/bubble_sort.png" alt="liquid Sorting Game" width="295px" height="286px"></a>
+                <br><br>
+                <a href="https://toytheater.com/snakes-and-ladders/" target="_blank">
+                    <img src="games/Snake.png" alt="Snake and Ladder" width="295px" height="286px"></a>
+                
+                <a href="https://www.memozor.com/memory-games/by-theme" target="_blank">
+                    <img src="games/Memory.png" class="image"  alt="Memory Game" width="295px" height="286px">   
+                </a>
+                <a href="https://www.abcya.com/games/alphabet_bubble_letter_match" target="_blank">
+                    <img src="games/alpha_bubble.png" alt="Alphabet Bubble" width="295px" height="286px"></a>
+                <br><br>
+            <a href="https://toytheater.com/hidden-picture-playground/" target="_blank">
+                <img src="games/Search.png" alt="Search Game" width="295px" height="286px"></a>
+                <a href="https://learningworksforkids.com/apps/see-touch-learn/" target="_blank">
+                    <img src="games/g1.png" alt="SeeTouchLearn"  width="295px" height="286px"></a>
+            <a href="https://www.roomrecess.com/pages/ColoringPagesForKids.html" target="_blank">
+                <img src="games/Colouring.png" alt="Colouring Game" width="295px" height="286px"></a>
+            <br><br><br>
+            
+        </section>
+        <br><br><hr style="height:5px;width:1080px;color:rgb(104, 90, 90);background-color:grey">
+        <section>
+            <h2 id="pc">Paper Craft</h2>
+            <!-- Add an image which links to paper craft page -->
+            <a href="papercrat.html" target="_blank">
+            <img src="images/paperCraft.png" alt="PaperCraft" >
+            </a>
+        </section>
+    </main>
+    <footer>
+        &copy; Autimate | 2024
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

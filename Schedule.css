@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #a9d0df; /* Calming background color */
+  }
+  .dabba {
+    background-color: #e1f7d5; /* Even more lighter shade of green */
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 200px;
+    width: 60%; /* Increased margin-top to move it further down */
+    margin-left: 280px; /* Added margin-left to move it to the right */
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; /* Increased space between the sentence and input field */
+  }
+  #activityInput {
+    width: 50%; /* Reduced input field width */
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #8d99ae; /* Light purple button color */
+    color: #edf2f4; /* Calming text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px; /* Increased space between button and outputs */
+  }
+  button:hover {
+    background-color: #2b2d42; /* Deep blue hover color */
+  }
+  .output-container {
+    width: 30%; /* Adjusted width to make them narrower */
+    border: 2px solid #a3b1c6; /* Reduced border thickness */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Increased space between output containers */
+    text-align: center; /* Center align the output sentence */
+    margin: auto; /* Center the container */
+    background-color: #d3f2be; /* Light shade of green */
+  }
+  #output {
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;;
+  }
+  #schedule-info,
+  #schedule-info-end {
+    margin-bottom: 20px;
+  }
+  .active {
+  font-weight: bold;
+  border: 1px solid #086375;
+  border-radius: 10px;
+  box-shadow: 0px 3px 0px #086375;
+  background-color: #69b1aa;
+  }
+  .nav-link:hover {
+  border: 2px solid #086375;
+  border-radius: 10px;
+  box-shadow: 0px 3px 0px #086375;
+  }
+  #title{
+  color: #086375;
+  font-family: "Balsamiq Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 50px;
+  margin-left: 150px;
+  font-style: normal;
+  }
+  #nav{
+  color: #A4F9C8;
+  }
+  #nav1, #nav2,#nav3,#nav4,#nav5{
+  color: #086375;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  border-bottom: 3px solid #086375;
+  border-radius: 30px;
+  }
+  #navbar{
+  color: #A4F9C8;
+  }
+  /* .active {
+      font-weight: bold;
+      border: 1px solid #086375;
+      border-radius: 10px;
+      box-shadow: 0px 3px 0px #086375;
+      background-color: #A7FFF6;
+    }
+    .nav-link:hover {
+      border: 2px solid #086375;
+      border-radius: 10px;
+      box-shadow: 0px 3px 0px #086375;
+    }
+    #title{
+    color: #086375;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 50px;
+    margin-left: 150px;
+    font-style: normal;
+    }
+    #nav{
+      color: #A4F9C8;
+    }
+    #nav1, #nav2,#nav3,#nav4{
+      color: #086375;
+    font-family: "Marhey", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: large;
+    font-style: normal;
+    }
+    #navbar{
+      color: #A4F9C8;
+    } */
