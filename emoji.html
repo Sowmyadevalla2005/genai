@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emoji Text to Speech</title>
+<style>
+    .emoji {
+        font-size: 10rem; /* Increase the font-size to increase the size of the emoji */
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <h1>Directions</h1>
+    <span class="emoji" onclick="speakEmoji('⬆️')">⬆️</span>
+<span class="emoji" onclick="speakEmoji('➡️')">➡️</span>
+<span class="emoji" onclick="speakEmoji('⬇️')">⬇️</span>
+<span class="emoji" onclick="speakEmoji('⬅️')">⬅️</span>
+<h1>Feelings</h1>
+<span class="emoji" onclick="speakEmoji('😊')">😊</span>
+<span class="emoji" onclick="speakEmoji('😂')">😂</span>
+<span class="emoji" onclick="speakEmoji('😭')">😭</span>
+<span class="emoji" onclick="speakEmoji('😡')">😡</span>
+<span class="emoji" onclick="speakEmoji('😔')">😔</span>
+<span class="emoji" onclick="speakEmoji('😎')">😎</span>
+<span class="emoji" onclick="speakEmoji('😍')">😍</span>
+<span class="emoji" onclick="speakEmoji('😞')">😞</span>
+<span class="emoji" onclick="speakEmoji('😬')">😬</span>
+<span class="emoji" onclick="speakEmoji('😌')">😌</span>
+    <h1>Time</h1>
+<span class="emoji" onclick="speakEmoji('🕐')">🕐</span>
+<span class="emoji" onclick="speakEmoji('🕑')">🕑</span>
+<span class="emoji" onclick="speakEmoji('🕒')">🕒</span>
+<span class="emoji" onclick="speakEmoji('🕓')">🕓</span>
+<span class="emoji" onclick="speakEmoji('🕔')">🕔</span>
+<span class="emoji" onclick="speakEmoji('🕕')">🕕</span>
+<span class="emoji" onclick="speakEmoji('🕖')">🕖</span>
+<span class="emoji" onclick="speakEmoji('🕗')">🕗</span>
+<span class="emoji" onclick="speakEmoji('🕘')">🕘</span>
+<span class="emoji" onclick="speakEmoji('🕙')">🕙</span>
+<span class="emoji" onclick="speakEmoji('🕚')">🕚</span>
+<span class="emoji" onclick="speakEmoji('🕛')">🕛</span>
+    <h1>Fruits</h1>
+<span class="emoji" onclick="speakEmoji('🍎')">🍎</span>
+<span class="emoji" onclick="speakEmoji('🍌')">🍌</span>
+<span class="emoji" onclick="speakEmoji('🍇')">🍇</span>
+<span class="emoji" onclick="speakEmoji('🍉')">🍉</span>
+<span class="emoji" onclick="speakEmoji('🍊')">🍊</span>
+<span class="emoji" onclick="speakEmoji('🍍')">🍍</span>
+<span class="emoji" onclick="speakEmoji('🍓')">🍓</span>
+<span class="emoji" onclick="speakEmoji('🍒')">🍒</span>
+<span class="emoji" onclick="speakEmoji('🥝')">🥝</span>
+<span class="emoji" onclick="speakEmoji('🍑')">🍑</span>
+<h1>Numbers</h1>
+<span class="emoji" onclick="speakEmoji('0')">0️⃣</span>
+<span class="emoji" onclick="speakEmoji('1')">1️⃣</span>
+<span class="emoji" onclick="speakEmoji('2')">2️⃣</span>
+<span class="emoji" onclick="speakEmoji('3')">3️⃣</span>
+<span class="emoji" onclick="speakEmoji('4')">4️⃣</span>
+<span class="emoji" onclick="speakEmoji('5')">5️⃣</span>
+<span class="emoji" onclick="speakEmoji('6')">6️⃣</span>
+<span class="emoji" onclick="speakEmoji('7')">7️⃣</span>
+<span class="emoji" onclick="speakEmoji('8')">8️⃣</span>
+<span class="emoji" onclick="speakEmoji('9')">9️⃣</span>
+<h1>emojis</h1>
+<h1>BreakFast</h1>
+<span class="emoji" onclick="speakEmoji('🥞')">🥞</span>
+<span class="emoji" onclick="speakEmoji('🥓')">🥓</span>
+<span class="emoji" onclick="speakEmoji('🍳')">🍳</span>
+<span class="emoji" onclick="speakEmoji('🥐')">🥐</span>
+<span class="emoji" onclick="speakEmoji('🥚')">🥚</span>
+<span class="emoji" onclick="speakEmoji('🥯')">🥯</span>
+<span class="emoji" onclick="speakEmoji('🥑')">🥑</span>
+<span class="emoji" onclick="speakEmoji('🍓')">🍓</span>
+<span class="emoji" onclick="speakEmoji('🍇')">🍇</span>
+<span class="emoji" onclick="speakEmoji('🍉')">🍉</span>
+<span class="emoji" onclick="speakEmoji('😀')">😀</span>
+<span class="emoji" onclick="speakEmoji('😊')">😊</span>
+<span class="emoji" onclick="speakEmoji('🐱')">🐱</span>
+<span class="emoji" onclick="speakEmoji('🌞')">🌞</span>
+<span class="emoji" onclick="speakEmoji('🌸')">🌸</span>
+<span class="emoji" onclick="speakEmoji('🐶')">🐶</span>
+<span class="emoji" onclick="speakEmoji('🚀')">🚀</span>
+<span class="emoji" onclick="speakEmoji('🌈')">🌈</span>
+<span class="emoji" onclick="speakEmoji('🎉')">🎉</span>
+
+<!-- Add more emojis as needed -->
+
+<script>
+function speakEmoji(emoji) {
+    var text = getEmojiText(emoji);
+    var utterance = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(utterance);
+}
+
+function getEmojiText(emoji) {
+    switch (emoji) {
+        case '😊':
+            return "Smiling Face with Smiling Eyes";
+        case '😂':
+            return "Face with Tears of Joy";
+        case '😭':
+            return "Loudly Crying Face";
+        case '😡':
+            return "Angry Face";
+        case '😔':
+            return "Pensive Face";
+        case '😎':
+            return "Smiling Face with Sunglasses";
+        case '😍':
+            return "Smiling Face with Heart-Eyes";
+        case '😞':
+            return "Disappointed Face";
+        case '😬':
+            return "Grimacing Face";
+        case '😌':
+            return "Relieved Face";
+        case '🥞':
+            return "Pancakes";
+        case '🥓':
+            return "Bacon";
+        case '🍳':
+            return "Fried eggs";
+        case '🥐':
+            return "Croissant";
+        case '🥚':
+            return "Boiled egg";
+        case '🥯':
+            return "Bagel";
+        case '🥑':
+            return "Avocado";
+        case '🍓':
+            return "Strawberries";
+        case '🍇':
+            return "Grapes";
+        case '🍉':
+            return "Watermelon";
+        case '🍎':
+            return "Red apple";
+        case '🍌':
+            return "Banana";
+        case '🍇':
+            return "Grapes";
+        case '🍉':
+            return "Watermelon";
+        case '🍊':
+            return "Tangerine";
+        case '🍍':
+            return "Pineapple";
+        case '🍓':
+            return "Strawberry";
+        case '🍒':
+            return "Cherries";
+        case '🥝':
+            return "Kiwi fruit";
+        case '🍑':
+            return "Peach";
+            case '0':
+            return "Zero";
+        case '1':
+            return "One";
+        case '2':
+            return "Two";
+        case '3':
+            return "Three";
+        case '4':
+            return "Four";
+        case '5':
+            return "Five";
+        case '6':
+            return "Six";
+        case '7':
+            return "Seven";
+        case '8':
+            return "Eight";
+        case '9':
+            return "Nine";
+        case '😀':
+            return "Smiling face with big eyes";
+        case '😊':
+            return "Smiling face with smiling eyes";
+        case '🐱':
+            return "Cat face";
+        case '🌞':
+            return "Sun with face";
+        case '🌸':
+            return "Cherry blossom";
+        case '🐶':
+            return "Dog face";
+        case '🚀':
+            return "Rocket";
+        case '🌈':
+            return "Rainbow";
+        case '🎉':
+            return "Party popper";
+            case '🕐':
+            return "One o'clock";
+        case '🕑':
+            return "Two o'clock";
+        case '🕒':
+            return "Three o'clock";
+        case '🕓':
+            return "Four o'clock";
+        case '🕔':
+            return "Five o'clock";
+        case '🕕':
+            return "Six o'clock";
+        case '🕖':
+            return "Seven o'clock";
+        case '🕗':
+            return "Eight o'clock";
+        case '🕘':
+            return "Nine o'clock";
+        case '🕙':
+            return "Ten o'clock";
+        case '🕚':
+            return "Eleven o'clock";
+        case '🕛':
+            return "Twelve o'clock";
+        case '⬆️':
+            return "Up arrow";
+        case '➡️':
+            return "Right arrow";
+        case '⬇️':
+            return "Down arrow";
+        case '⬅️':
+            return "Left arrow";
+        // Add more cases for other emojis if needed
+        default:
+            return "No description available";
+    }
+}
+</script>
+
+</body>
+</html>
